@@ -19,6 +19,10 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
         webSecurity
                 .ignoring()
                 .antMatchers("/resources/**");
+        webSecurity
+                .ignoring()
+                .antMatchers("/*.js");
+
 
 
 //        webSecurity
@@ -38,7 +42,7 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
     protected void configure(HttpSecurity http) throws Exception {
         http
                 .authorizeRequests()
-                .antMatchers("/signup","/about", "/").permitAll()
+                .antMatchers("/signup","/about", "/", "/service-worker.js").permitAll()
                 .anyRequest().authenticated()
                 .and()
                 .formLogin()
