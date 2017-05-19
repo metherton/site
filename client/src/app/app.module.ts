@@ -9,11 +9,13 @@ import 'hammerjs';
 
 import { AppComponent } from './app.component';
 import { AppAlgorithmComponent } from './app-algorithm/app-algorithm.component';
+import { AppHomeComponent } from './app-home/app-home.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    AppAlgorithmComponent
+    AppAlgorithmComponent,
+    AppHomeComponent
   ],
   imports: [
     BrowserModule,

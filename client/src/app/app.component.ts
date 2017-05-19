@@ -8,7 +8,7 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = 'app works!';
   tiles: any[];
-
+  
   ngOnInit() {
     this.tiles = [
       {text: 'One', cols: 1, rows: 1, color: 'lightblue'},

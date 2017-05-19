@@ -20,3 +20,12 @@ footer {
   text-align: center;
   font-size: 0.8em;
 }
+
+.example-card {
+  width: 400px;
+}
+
+.example-header-image {
+  background-image: url('../assets/shiba2.jpg');
+  background-size: cover;
+}
